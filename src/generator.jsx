@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+function randomIntFromInterval(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
 class Generator extends Component {
     state = {
         randomNumber: 75,
@@ -8,15 +12,20 @@ class Generator extends Component {
     }
 
     handleGenerate = () => {
-        console.log("Button clicked");
+        this.setState({
+            randomNumber: randomIntFromInterval(
+                this.state.minimumNumber,
+                this.state.maximumNumber
+            )
+        });
     }
 
     handleMinChange = (event) => {
-        this.setState({minimumNumber: event.target.value})
+        this.setState({minimumNumber: event.target.value});
     }
 
     handleMaxChange = (event) => {
-        this.setState({maximumNumber: event.target.value})
+        this.setState({maximumNumber: event.target.value});
     }
 
     render() { 
