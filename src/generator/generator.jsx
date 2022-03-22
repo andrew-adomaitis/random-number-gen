@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./generator.css";
 
 function randomIntFromInterval(min, max) {
     let x = (Math.floor(Math.random() * (max - min +1)) + min);
@@ -32,7 +33,6 @@ class Generator extends Component {
     render() { 
         return (
             <React.Fragment>
-                <h2>{this.state.randomNumber}</h2>
                 <input 
                     type='number'
                     placeholder='minimum'
@@ -46,8 +46,7 @@ class Generator extends Component {
                 <button onClick={this.handleGenerate}>
                     Generate
                 </button>
-                <h3>{this.state.minimumNumber}</h3>
-                <h3>{this.state.maximumNumber}</h3>
+                <h2>{this.state.randomNumber}</h2>
             </React.Fragment>
         );
     }

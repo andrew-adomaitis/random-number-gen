@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  background: linear-gradient(90deg, rgb(55, 184, 109) 0%, rgba(233,222,207,1) 100%);
+  padding-bottom: 80%;
+}
+
+.top {
+  margin-bottom: 10px;
+  border-width: 5px;
+  border-color: rgba(24, 60, 128, 0.836);
+  border-style:dashed;
+  color:rgb(46, 46, 46);
 }
 
 .App-logo {
