@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import Generator from './generator';
+import Generator from './generator/generator';
 
 function App() {
   return (
