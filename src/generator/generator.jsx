@@ -35,12 +35,12 @@ class Generator extends Component {
             <React.Fragment>
                 <input 
                     type='number'
-                    placeholder='minimum'
+                    placeholder={this.state.minimumNumber}
                     onChange={this.handleMinChange}
                 />
                 <input 
                     type='number' 
-                    placeholder='maximum'
+                    placeholder={this.state.maximumNumber}
                     onChange={this.handleMaxChange}
                 />
                 <button onClick={this.handleGenerate}>
